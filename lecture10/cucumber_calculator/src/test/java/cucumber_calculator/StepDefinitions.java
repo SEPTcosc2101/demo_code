@@ -12,6 +12,12 @@ class PlusOperator {
 	}
 }
 
+class MinusOperator {
+	static Integer minus(Integer a, Integer b) {
+		return a-b;
+	}
+}
+
 public class StepDefinitions {
 	private Integer left;
 	private Integer right;
@@ -27,8 +33,15 @@ public class StepDefinitions {
 	public void i_add_them_up() {
 		answer = PlusOperator.plus(left, right);
 	}
+	@When("I subtract {int} from <int>")
+	public void i_subtract_from_int(Integer int1) {
+		answer = MinusOperator.minus(left, right);
+	}
 	@Then("I should get {int}")
 	public void i_should_get(Integer int1) {
 		assertEquals(int1, answer);
 	}
+
+
+
 }

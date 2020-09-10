@@ -1,3 +1,4 @@
+cucumber_calculator\RunCucumberTest.class
+cucumber_calculator\MinusOperator.class
 cucumber_calculator\PlusOperator.class
 cucumber_calculator\StepDefinitions.class
-cucumber_calculator\RunCucumberTest.class
